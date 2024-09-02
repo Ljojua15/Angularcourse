@@ -1,1 +1,24 @@
-<p>angular-directives works!</p>
+<div>
+  <h1>Angular Directives</h1>
+
+  <table>
+    <thead>
+      <tr class="test">
+        <th>Id:</th>
+        <th>Name:</th>
+        <th>known:</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(dir of directive(); track dir.id){
+        <tr>
+          <td>{{dir.id}}</td>
+          <td>{{dir.name}}</td>
+          <td>{{dir.usefull}}</td>
+        </tr>
+      }@empty {
+        <h2>not found !</h2>
+      }
+    </tbody>
+  </table>
+</div>
