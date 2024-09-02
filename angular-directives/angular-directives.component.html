@@ -14,11 +14,25 @@
         <tr>
           <td>{{dir.id}}</td>
           <td>{{dir.name}}</td>
-          <td>{{dir.usefull}}</td>
+          <td [ngStyle]="{'background-color': dir.color}" >{{dir.usefull}}</td>
         </tr>
       }@empty {
         <h2>not found !</h2>
       }
     </tbody>
   </table>
+</div>
+
+
+<hr>
+
+<div class="ngSwich">
+  <h1>NgSwich</h1>
+  <label> Enter Your Age</label>
+  <input type="text" (input)="checkAge()" [(ngModel)] = "age">
+
+  <div [ngSwitch]="isOlder">
+    <p *ngSwitchCase="true">aris</p>
+    <p *ngSwitchDefault>ar aris</p>
+  </div>
 </div>
