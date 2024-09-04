@@ -21,3 +21,27 @@ tr {
 thead tr {
   height: auto; /* Allows the header row to adjust its height based on content */
 }
+
+
+.main-btns{
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  button{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: green;
+    border-radius: 20px;
+    border: 4px solid black;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: brown;
+  }
+  }
+
